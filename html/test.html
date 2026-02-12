@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunrise Care</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+    color:#111;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 80px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:600;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#3b8dbd;
+    font-weight:500;
+}
+
+.right-nav{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.icon{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#e8f3fa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#3b8dbd;
+    font-weight:bold;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.profile img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+/* ================= HERO ================= */
+
+.container{
+    padding:0 80px 60px;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns: 1.2fr 2fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+/* LEFT PROFILE */
+
+.doctor-card{
+    text-align:center;
+}
+
+.doctor-card img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #d6edf9;
+}
+
+.doctor-name{
+    margin-top:15px;
+    font-size:20px;
+    font-weight:600;
+}
+
+.doctor-name span{
+    color:#3b8dbd;
+}
+
+/* CENTER TITLE */
+
+.hero-title{
+    font-size:72px;
+    font-weight:600;
+    line-height:1.1;
+}
+
+.hero-title span{
+    color:#5db5de;
+}
+
+/* RIGHT CARD */
+
+.latest-card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.latest-card h4{
+    color:#5db5de;
+    margin-bottom:10px;
+}
+
+.latest-card p{
+    font-size:14px;
+    margin-bottom:15px;
+    color:#555;
+}
+
+.avatar-group{
+    display:flex;
+    gap:8px;
+}
+
+.avatar-group img{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+
+/* ================= BOTTOM SECTION ================= */
+
+.bottom-section{
+    margin-top:60px;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap:40px;
+}
+
+/* LABS */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h3{
+    margin-bottom:20px;
+}
+
+.lab-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.lab-buttons div{
+    padding:12px 18px;
+    background:#eef6fb;
+    border-radius:15px;
+    font-size:14px;
+}
+
+/* PLAN SCHEDULE */
+
+.schedule{
+    height:220px;
+    position:relative;
+}
+
+.timeline{
+    position:absolute;
+    bottom:20px;
+    left:0;
+    width:100%;
+    height:4px;
+    background:#d6edf9;
+}
+
+.dot{
+    width:14px;
+    height:14px;
+    background:#5db5de;
+    border-radius:50%;
+    position:absolute;
+    bottom:13px;
+}
+
+.dot:nth-child(2){ left:30%; }
+.dot:nth-child(3){ left:60%; }
+
+/* APPOINTMENT IMAGE */
+
+.appointment img{
+    width:100%;
+    border-radius:20px;
+    object-fit:cover;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Sunrise Care</div>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Our Approach</a>
+        <a href="#">Our Goals</a>
+    </div>
+
+    <div class="right-nav">
+        <div class="icon">📞</div>
+        <div class="icon">🔔</div>
+
+        <div class="profile">
+            <span>Judy T.</span>
+            <img src="https://randomuser.me/api/portraits/women/44.jpg">
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+
+        <!-- LEFT -->
+        <div class="doctor-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg">
+            <div class="doctor-name"><span>Dr.</span> John Wick</div>
+        </div>
+
+        <!-- CENTER -->
+        <div>
+            <div class="hero-title">
+                Your <span>path</span><br>
+                <span>to</span> health
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="latest-card">
+            <h4>Latest visited</h4>
+            <p>Wrist post surgery</p>
+            <div class="avatar-group">
+                <img src="https://randomuser.me/api/portraits/men/12.jpg">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM SECTION -->
+    <div class="bottom-section">
+
+        <!-- LABS -->
+        <div class="card">
+            <h3>Labs</h3>
+            <div class="lab-buttons">
+                <div>Clinical blood count</div>
+                <div>Biochemical Blood</div>
+                <div>Infection marker</div>
+            </div>
+        </div>
+
+        <!-- PLAN SCHEDULE -->
+        <div class="card schedule">
+            <h3>Plan Schedule</h3>
+            <div class="timeline"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <!-- APPOINTMENT -->
+        <div class="appointment">
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309">
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
